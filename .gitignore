@@ -1,0 +1,79 @@
+# Rust / Cargo build output
+/target/
+**/*.rs.bk
+*.pdb
+
+# Cargo.lock: keep for a binary/app (uncomment the next line only for a library)
+# Cargo.lock
+
+# Packaged / copied release binaries
+/*.exe
+/dist/
+/release/
+NTFS-Suite-*.exe
+ntfssuite.exe
+
+# Local scratch / test output (not part of the project)
+/_local_test/
+out-records.csv
+out-*.csv
+
+# App data: case vaults and their SQLite sidecars
+*.vault
+*.vault-wal
+*.vault-shm
+*.vault-journal
+
+# Collected NTFS artifacts written by the Collect engine
+*_artifacts/
+/cases/
+/collected/
+$MFT
+$UsnJrnl_*
+$Secure_*
+*.bodyfile
+
+# Logs and temp
+*.log
+*.tmp
+*.bak
+*.orig
+/tmp/
+
+# Editor / IDE
+/.vscode/
+/.idea/
+*.iml
+*.code-workspace
+*.swp
+*.swo
+*~
+.\#*
+\#*\#
+
+# OS cruft
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+# Linux
+.directory
+.Trash-*
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Node (only if you ever add JS tooling; harmless otherwise)
+/node_modules/

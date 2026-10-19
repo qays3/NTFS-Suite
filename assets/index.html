@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NTFS Suite</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<link rel="stylesheet" href="/css/root.css">
+<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<header class="topbar">
+<div class="tabs">
+<button type="button" class="tab" id="btn-home">Home</button>
+<button type="button" class="tab" id="btn-cases">Cases</button>
+<button type="button" class="tab" id="btn-collect">Collect</button>
+<button type="button" class="tab" id="btn-settings">Settings</button>
+<button type="button" class="tab" id="btn-guide">Guide</button>
+<button type="button" class="tab" id="btn-samples">Samples</button>
+</div>
+<span class="topbar-spacer"></span>
+<button type="button" class="icon-btn" id="btn-palette" title="Commands (Ctrl K)"></button>
+<button type="button" class="icon-btn" id="btn-theme" title="Theme"></button>
+<button type="button" class="case-chip" id="case-chip" hidden></button>
+</header>
+<main class="view" id="view"></main>
+<footer class="app-foot">developed by <a href="https://qayssarayra.com" target="_blank" rel="noreferrer">qayssarayra.com</a></footer>
+
+<div class="modal-backdrop" id="browse-modal" hidden>
+<div class="modal">
+<div class="modal-head">
+<span id="browse-title">Browse</span>
+<button type="button" class="btn ghost small" id="browse-close">Close</button>
+</div>
+<div class="browse-path" id="browse-current"></div>
+<div class="browse-roots" id="browse-roots"></div>
+<ul class="browse-list" id="browse-list"></ul>
+<div class="modal-foot">
+<button type="button" class="btn ghost small" id="browse-up">Up</button>
+<button type="button" class="btn small" id="browse-select">Select this folder</button>
+</div>
+</div>
+</div>
+<script type="module" src="/js/app.js"></script>
+</body>
+</html>

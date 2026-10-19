@@ -1,0 +1,33 @@
+[package]
+name = "ntfs-suite"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/qays3/NTFS-Suite"
+
+[[bin]]
+name = "ntfssuite"
+path = "src/main.rs"
+
+[lib]
+name = "ntfs_suite"
+path = "src/lib.rs"
+
+[dependencies]
+rusqlite = { version = "0.31.0", features = ["bundled"] }
+sha2 = "0.10.8"
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.128"
+regex = "1.11.1"
+axum = "0.7.9"
+tokio = { version = "1.40.0", features = ["rt-multi-thread", "net", "sync", "macros", "fs", "io-util"] }
+rust-embed = "8.5.0"
+mime_guess = "2.0.5"
+futures-util = "0.3.30"
+tokio-stream = "0.1.16"
+
+[profile.release]
+strip = true
+panic = "abort"
+codegen-units = 1
+lto = true
+opt-level = "z"

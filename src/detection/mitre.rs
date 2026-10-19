@@ -1,0 +1,10 @@
+pub const TIMESTOMP: &str = "T1070.006";
+pub const NTFS_FILE_ATTRIBUTES: &str = "T1564.004";
+pub const FILE_DELETION: &str = "T1070.004";
+pub const INDICATOR_REMOVAL: &str = "T1070";
+pub const MASQUERADING: &str = "T1036.005";
+pub const LATERAL_TOOL_TRANSFER: &str = "T1570";
+pub const MASQUERADE_NAME: &str = "T1036";
+pub const HIDDEN_FILE: &str = "T1564.001";
+pub const HIJACK_EXECUTION: &str = "T1574";
+pub const PERMISSION_MOD: &str = "T1222";
